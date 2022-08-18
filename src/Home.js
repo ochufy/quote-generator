@@ -60,7 +60,7 @@ function Home() {
         flexWrap: 'wrap',
         alignItems: 'center',
         backgroundColor: '#D05252',
-        borderRadius: "1",
+        borderRadius: "20px",
         width: "50%",
         padding: "2% 2% 1% 2%"
       }}
@@ -69,7 +69,7 @@ function Home() {
       <Box sx={{width: "100%"}}>
         <Grid container spacing={2}>
           <Grid item xs={10} sx={{display:"flex", justifyContent:"center",alignItems:"center"}}>
-            <Typography sx={{color: "white", }} variant="body2">{author}</Typography>
+            <Typography sx={{ml: "15%",color: "white", fontWeight: "600"}} variant="body2">{author}</Typography>
           </Grid>
           <Grid item xs={2} sx={{display:"flex", justifyContent:"center",alignItems:"center"}}>
             <IconButton><BookmarkIcon sx={{color: "white"}} fontSize="small"/></IconButton>
