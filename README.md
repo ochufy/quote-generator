@@ -1,5 +1,5 @@
 ## Quote Generator app using ReactJS
 
 #### Todo:
-- [ ]  Bookmarks page
+- [ ]  use Redux for state management
 - [ ]  Styling
