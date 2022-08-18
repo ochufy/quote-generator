@@ -32,10 +32,10 @@ function MenuButtons() {
         alignItems: 'center'
       }}
     >
-    <Button size="small" variant={button1Variant} onClick={handleclick1}>
+    <Button sx={{color:"white", borderColor: "white"}} size="small" variant={button1Variant} onClick={handleclick1}>
       Home
     </Button>
-    <Button size="small" variant={button2Variant} onClick={handleclick2}>
+    <Button sx={{color:"white", borderColor: "white"}} size="small" variant={button2Variant} onClick={handleclick2}>
       Bookmarks
     </Button>
     </Box>
