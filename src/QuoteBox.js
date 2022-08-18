@@ -22,7 +22,7 @@ function QuoteBox(props) {
       }}
     >
       <Typography variant="body1" sx={{color: "white", width:"100%",pb:"7%", display:"flex", alignItems:"center",justifyContent: 'center',}}>{props.quote}</Typography>
-      <Typography sx={{ml: "10%",color: "white", fontWeight: "600"}} variant="body2">{props.author}</Typography>
+      <Typography sx={{ml: "3%",color: "white", fontWeight: "600"}} variant="body2">{props.author}</Typography>
     </Paper>
     </>
   )
