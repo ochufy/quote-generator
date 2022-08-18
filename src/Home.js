@@ -89,9 +89,9 @@ function Home() {
     <Autocomplete
       disablePortal
       options={options}
-      sx={{ width: 200, margin: "auto", mt: "3%" }}
+      sx={{ width: 200, margin: "auto", mt: "3%", borderRadius: 7, backgroundColor: "white", opacity: 0.8}}
       onChange={(event, newTag) => {setTag(newTag); console.log(newTag,tag);}}
-      renderInput={(params) => <TextField {...params} label="choose tag" />}
+      renderInput={(params) => <TextField className="inputRounded" {...params} label="choose tag"/>}
     />
     <Button sx={{mt: "3%"}} variant="contained" color="success" onClick={getNewQuote}>
       Next Quote
