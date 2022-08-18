@@ -1,3 +1,3 @@
-let favQuotes = [{}]
+let favQuotes = []
 
 export default favQuotes;

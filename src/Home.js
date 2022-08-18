@@ -54,10 +54,15 @@ function Home() {
   else {getQuote()}
   }
 
+  let newQuote = {
+    "key": quoteID,
+    "content": quote,
+    "author": author
+  }
+
   const addQuote = () => {
-    if(!idlist.includes(quoteID)){
-    idlist.push(quoteID);}
-    // console.log(idlist);
+    favQuotes.push(newQuote);
+    console.log(favQuotes);
   }
 
   return (

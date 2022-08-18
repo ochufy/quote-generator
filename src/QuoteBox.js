@@ -1,7 +1,9 @@
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
-
+import { useEffect } from "react";
 function QuoteBox(props) {
+
+  useEffect(()=>{},[])
   return(
     <>
     <Paper
