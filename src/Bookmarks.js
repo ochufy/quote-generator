@@ -1,6 +1,10 @@
+import idlist from "./QuoteIDs.js";
+
 function Bookmarks() {
+
+  console.log(idlist);
   return (
-    <h1>Bookmarks</h1>
+    <></>
   )
 }
 
