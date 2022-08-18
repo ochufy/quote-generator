@@ -1,4 +1,4 @@
-import idlist from "./QuoteIDs.js";
+import favQuotes from "./FavQuotes.js";
 import { useState, useEffect } from "react"
 import Axios from "axios"
 import QuoteBox from "./QuoteBox.js";
@@ -23,8 +23,7 @@ function Bookmarks() {
     )
   }
 
-  if(idlist != null){
-  idlist.forEach(newQuoteBox)}
+  idlist.forEach(newQuoteBox);
 
   useEffect(() => {newQuoteBox()}, [])
 

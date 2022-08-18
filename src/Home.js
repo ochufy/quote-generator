@@ -10,7 +10,7 @@ import Tags from "./tags.json";
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
-import idlist from "./QuoteIDs.js";
+import favQuotes from "./FavQuotes.js";
 // import CircularProgress from '@mui/material/CircularProgress'; //loading indicator
 
 function Home() {
