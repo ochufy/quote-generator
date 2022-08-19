@@ -3,4 +3,7 @@
 #### Todo:
 - [ ]  use Redux for state management
 - [ ]  Styling
-- [ ]  remove bookmarked quotes
+- [x]  remove bookmarked quotes
+
+#### To Fix:
+- [ ] data persists, but page refreshes on each delete
