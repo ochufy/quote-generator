@@ -3,3 +3,4 @@
 #### Todo:
 - [ ]  use Redux for state management
 - [ ]  Styling
+- [ ]  remove bookmarked quotes
