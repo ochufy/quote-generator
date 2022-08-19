@@ -1,13 +1,16 @@
-import favQuotes from "./FavQuotes.js";
 import QuoteBox from "./QuoteBox.js";
 
 function Bookmarks() {
 
-  favQuotes.forEach((q)=>{console.log(q.content, q.author);})
+  let li = [];
+  for(let i=0; i<localStorage.length; i++) {
+    let k = localStorage.key(i);
+    li.push(JSON.parse(localStorage.getItem(k)));
+  }
 
   return (
     <div>
-    {favQuotes.map((q) => (<QuoteBox quote={q.content} author={q.author}/>))}
+    {li.map((q) => (<QuoteBox key={q.id} id={q.id} quote={q.content} author={q.author}/>))}
     </div>
   )
 }

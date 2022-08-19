@@ -10,8 +10,6 @@ import Tags from "./tags.json";
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
-import favQuotes from "./FavQuotes.js";
-// import CircularProgress from '@mui/material/CircularProgress'; //loading indicator
 
 function Home() {
   const [quote, setQuote] = useState("");
@@ -24,11 +22,9 @@ function Home() {
     Axios.get("https://api.quotable.io/random")
     .then(
       (response) => {
-        // console.log(response.data);
         setQuote(response.data.content);
         setAuthor("- " + response.data.author);
         setQuoteID(response.data._id);
-        // console.log(quoteID);
       }
     )
   }
@@ -38,16 +34,13 @@ function Home() {
   const options = Tags.map(tag => (tag.name));
 
   const getNewQuote = () => {
-    // window.location.reload(false);
     if(tag != null){
     Axios.get(`https://api.quotable.io/random?tags=${tag}`)
     .then(
       (response) => {
-        // console.log("tag = " + response.data.tags);
         setQuote(response.data.content);
         setAuthor("- " + response.data.author);
         setQuoteID(response.data._id);
-        // console.log(quoteID);
       }
     )
   }
@@ -56,13 +49,13 @@ function Home() {
 
   let newQuote = {
     "key": quoteID,
+    "id": quoteID,
     "content": quote,
     "author": author
   }
 
   const addQuote = () => {
-    favQuotes.push(newQuote);
-    console.log(favQuotes);
+    localStorage.setItem(`${newQuote.id}`, JSON.stringify(newQuote));
   }
 
   return (

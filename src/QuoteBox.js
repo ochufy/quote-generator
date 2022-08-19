@@ -4,15 +4,12 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
-import {favQuotes} from "./FavQuotes.js";
 
 function QuoteBox(props) {
 
   const removeQuote = () => {
-    console.log(props);
-    console.log(favQuotes);
-    favQuotes = favQuotes.filter(quote => quote.id !== props.id);
-    console.log(favQuotes);
+    localStorage.removeItem(props.id);
+    window.location.reload(false);
   }
 
   return(
