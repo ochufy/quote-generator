@@ -60,6 +60,8 @@ function Home() {
 
   return (
     <>
+    <Grid container>
+    <Grid item md={12} xs={12}>
     <Paper
       elevation={4}
       sx={{
@@ -87,6 +89,8 @@ function Home() {
         </Grid>
       </Box>
     </Paper>
+    </Grid>
+    </Grid>
     <Box
     sx={{
       margin: "auto",
@@ -103,7 +107,7 @@ function Home() {
       onChange={(event, newTag) => {setTag(newTag)}}
       renderInput={(params) => <TextField className="inputRounded" {...params} label="choose tag"/>}
     />
-    <Button sx={{mt: "3%"}} variant="contained" color="success" onClick={getNewQuote}>
+    <Button className="buttonRounded" sx={{mt: "3%", borderRadius: 3, textTransform: "capitalize"}} variant="contained" color="success" onClick={getNewQuote}>
       Next Quote
     </Button>
     </Box>

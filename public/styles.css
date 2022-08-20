@@ -10,3 +10,7 @@ html {
 .inputRounded .MuiOutlinedInput-root{
    border-radius: 27px;
 }
+
+/* .buttonRounded .MuiButton-contained{
+  border-radius: 20px;
+} */
