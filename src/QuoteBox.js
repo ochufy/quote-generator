@@ -14,7 +14,7 @@ function QuoteBox(props) {
 
   return(
     <>
-    <Paper
+    <Paper className="quotePaper"
       elevation={4}
       sx={{
         margin: "auto",
@@ -25,7 +25,6 @@ function QuoteBox(props) {
         alignItems: 'center',
         backgroundColor: '#D05252',
         borderRadius: "20px",
-        width: "50%",
         padding: "2% 2% 1% 2%"
       }}
     >

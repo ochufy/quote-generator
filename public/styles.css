@@ -11,6 +11,38 @@ html {
    border-radius: 27px;
 }
 
-/* .buttonRounded .MuiButton-contained{
-  border-radius: 20px;
-} */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .quotePaper {
+    width: 80%;
+
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .quotePaper {
+    width: 80%
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .quotePaper {
+    width: 70%
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .quotePaper {
+    width: 50%
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .quotePaper {
+    width: 50%
+  }
+}

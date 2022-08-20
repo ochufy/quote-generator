@@ -60,9 +60,8 @@ function Home() {
 
   return (
     <>
-    <Grid container>
-    <Grid item md={12} xs={12}>
     <Paper
+      className="quotePaper"
       elevation={4}
       sx={{
         margin: "auto",
@@ -73,8 +72,7 @@ function Home() {
         alignItems: 'center',
         backgroundColor: '#D05252',
         borderRadius: "20px",
-        width: "50%",
-        padding: "2% 2% 1% 2%"
+        padding: "2% 2% 1% 2%",
       }}
     >
       <Typography variant="body1" sx={{color: "white", width:"100%",pb:"7%", display:"flex", alignItems:"center",justifyContent: 'center',}}>{quote}</Typography>
@@ -89,8 +87,6 @@ function Home() {
         </Grid>
       </Box>
     </Paper>
-    </Grid>
-    </Grid>
     <Box
     sx={{
       margin: "auto",
