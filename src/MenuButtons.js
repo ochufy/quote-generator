@@ -6,19 +6,35 @@ import { useState } from "react";
 function MenuButtons() {
   const navigate = useNavigate();
 
-  const [size1, setSize1] = useState("600");
-  const [size2, setSize2] = useState("300");
+  let s1 = "";
+  let s2 = "";
+  if(window.location.pathname === "/") {
+    s1 = "600";
+    s2 = "300";
+  }
+
+  if(window.location.pathname === "/bookmarks") {
+    s1 = "300";
+    s2 = "600";
+  }
+
+  const [size1, setSize1] = useState(s1);
+  const [size2, setSize2] = useState(s2);
 
   const handleclick1 = () => {
     navigate("/");
-    setSize1("600");
-    setSize2("300");
+    if(window.location.pathname === "/") {
+      setSize1("600");
+      setSize2("300");
+    }
   }
 
   const handleclick2 = () => {
     navigate("bookmarks");
-    setSize1("300");
-    setSize2("600");
+    if(window.location.pathname === "/bookmarks") {
+      setSize1("300");
+      setSize2("600");
+    }
   }
 
   return(
