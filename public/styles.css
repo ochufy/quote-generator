@@ -16,6 +16,10 @@ html {
   .quotePaper {
     width: 80%;
   }
+  .autoComplete {
+  width: 40%;
+  margin-top: 7%;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -43,5 +47,9 @@ html {
 @media only screen and (min-width: 1200px) {
   .quotePaper {
     width: 50%
+  }
+  .autoComplete {
+  width: 15%;
+  margin-top: 3%;
   }
 }

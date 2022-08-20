@@ -97,9 +97,10 @@ function Home() {
       flexDirection: "column",
     }}>
     <Autocomplete
+      className="autoComplete"
       disablePortal
       options={options}
-      sx={{ width: 200, margin: "auto", mt: "3%", borderRadius: 7, backgroundColor: "white", opacity: 0.8}}
+      sx={{mx: "auto", mb: "auto", borderRadius: 7, backgroundColor: "white", opacity: 0.8}}
       onChange={(event, newTag) => {setTag(newTag)}}
       renderInput={(params) => <TextField className="inputRounded" {...params} label="choose tag"/>}
     />
