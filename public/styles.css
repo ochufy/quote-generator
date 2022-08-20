@@ -1,5 +1,10 @@
 body {
   background: linear-gradient(256.47deg, #5E2AB3 2.64%, #161E6C 140.46%);
+  height: 100%
+}
+
+html {
+  height: 100%
 }
 
 .inputRounded .MuiOutlinedInput-root{
