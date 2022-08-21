@@ -10,9 +10,10 @@ import Tags from "./tags.json";
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
+import CircularProgress from '@mui/material/CircularProgress';
 
 function Home() {
-  const [quote, setQuote] = useState("");
+  const [quote, setQuote] = useState(null);
   const [author, setAuthor] = useState("");
   const [quoteID, setQuoteID] = useState("");
 
@@ -75,7 +76,10 @@ function Home() {
         padding: "2% 2% 1% 2%",
       }}
     >
-      <Typography variant="body1" sx={{color: "white", width:"100%",pb:"7%", display:"flex", alignItems:"center",justifyContent: 'center',}}>{quote}</Typography>
+      {quote ?
+        <Typography variant="body1" sx={{color: "white", width:"100%",pb:"7%", display:"flex", alignItems:"center",justifyContent: 'center',}}>{quote}</Typography>
+        : <CircularProgress sx={{color: "white"}}/>
+      }
       <Box sx={{width: "100%"}}>
         <Grid container spacing={2}>
           <Grid item xs={10} sx={{display:"flex", justifyContent:"center",alignItems:"center"}}>
